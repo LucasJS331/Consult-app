@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Cep</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="icon" href="/img/favicon.ico">
+</head>
+<body>
+    <section id="search-section"> 
+        <h1 id="main-title">Consulte seu cep!</h1>
+
+        <form action="/search" method="post">
+            <label class="form-label">insira seu CEP:</label>
+            <input type="text" placeholder="ex: 13454-235" class="form-input" name="search">
+            <label class="form-label error"><%= error %>  </label>
+            <button type="submit" class="form-button">Pesquisar</button>
+        </form>
+    </section>
+</body>
+</html>
